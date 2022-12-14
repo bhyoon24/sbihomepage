@@ -36,8 +36,7 @@
     <div id="mySidepanel" class="sidepanel">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <a href="#page-top">홈</a>
-        <a href="#about">회사소개</a>
-        <a href="#works">투자전략소개</a>
+        <a href="#about">회원제소개</a>
         <a href="#contact">회원가입</a>
     </div>
     <!-- header -->
@@ -92,6 +91,30 @@
                                         <div class="row d_flex">
                                             <div class="col-md-6">
                                                 <div class="con_img">
+                                                    <figure><img class="img_responsive" src="{% static 'images/top_img_ori.png' %}" alt="#" /></figure>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="bluid">
+                                                    <h1>주식투자<br>수익의 확실한 보장</h1>
+                                                    <p>자신있는 매월 회원제방식입니다.
+                                                    </p>
+                                                    <!--
+                                                    <a class="read_more" href="Javascript:void(0)">Read More </a><a class="read_more" href="Javascript:void(0)">Get A Quote </a>
+                                                    -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+                            <div class="carousel-item">
+                                <div class="container-fluid">
+                                    <div class="carousel-caption relative">
+                                        <div class="row d_flex">
+                                            <div class="col-md-6">
+                                                <div class="con_img">
                                                     <figure><img class="img_responsive" src="{% static 'images/top_img.jpg' %}" alt="#" /></figure>
                                                 </div>
                                             </div>
@@ -100,9 +123,7 @@
                                                     <h1>주식투자<br>수익을 보장합니다.</h1>
                                                     <p>새로운 개념의 주식정보 서비스 제공
                                                     </p>
-                                                    <!--
                                                     <a class="read_more" href="Javascript:void(0)">Read More </a><a class="read_more" href="Javascript:void(0)">Get A Quote </a>
-                                                    -->
                                                 </div>
                                             </div>
                                         </div>
@@ -123,39 +144,16 @@
                                                     <h1>주식투자<br>수익을 보장합니다.</h1>
                                                     <p>새로운 개념의 주식정보 서비스 제공
                                                     </p>
-                                                    <!--
                                                     <a class="read_more" href="Javascript:void(0)">Read More </a><a class="read_more" href="Javascript:void(0)">Get A Quote </a>
-                                                    -->
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="container-fluid">
-                                    <div class="carousel-caption relative">
-                                        <div class="row d_flex">
-                                            <div class="col-md-6">
-                                                <div class="con_img">
-                                                    <figure><img class="img_responsive" src="{% static 'images/top_img.jpg' %}" alt="#" /></figure>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="bluid">
-                                                    <h1>주식투자<br>수익을 보장합니다.</h1>
-                                                    <p>새로운 개념의 주식정보 서비스 제공
-                                                    </p>
-                                                    <!--
-                                                    <a class="read_more" href="Javascript:void(0)">Read More </a><a class="read_more" href="Javascript:void(0)">Get A Quote </a>
-                                                    -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            -->
                         </div>
+                        <!--
                         <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
                             <i class="fa fa-angle-left" aria-hidden="true"></i>
                             <span class="sr-only">Previous</span>
@@ -163,6 +161,7 @@
                         <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
                             <i class="fa fa-angle-right" aria-hidden="true"></i>
                             <span class="sr-only">Next</span>
+                        -->
                         </a>
                     </div>
                 </div>
@@ -178,16 +177,21 @@
                 <div class="col-md-12">
                     <div class="about_border">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-7">
                                 <div class="titlepage text_align_left">
                                     <h2>회원제 운영방법</h2>
                                 </div>
                                 <div class="about_text">
-                                    <p>It is a long established fact that a reader will be distracted bIt is a long established fact that a reader will be distracted by y It is a long established fact that a reader will be distracted by It is a long established fact that a reader will be distracted by </p>
+                                    <p>○ 철저한 회원제로 운영<br>
+                                    ○ 무료회원 1개월 수익을 기반으로 최초월 유료회원 가입<br>
+                                    ○ 매월 수익으로 월 유료회원 가입 가능 (장기가입 방식이 아닙니다)<br>
+                                    ○ 무료회원(1개월): 주 1종목 제공, 매수시점 제공<br>
+                                    ○ 유료회원(매월): 주 2~3종목 제공, 매수/매도시점 및 액수규모 제공</p>
+                                    <p>유료회원 가입비는 아래 회원가입정보 등록시 개별 연락이 됩니다.</p>
                                     <!--<a class="read_more" href="about.html">Read More</a>-->
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-5">
                                 <div class="about_img">
                                     <figure><img class="img_responsive" src="{% static 'images/about2.jpg' %}" alt="#" /></figure>
                                 </div>
@@ -199,7 +203,7 @@
         </div>
     </div>
     <!-- end about -->
-    <!-- works -->
+    <!-- works
     <div id="works" class="works">
         <div class="container">
             <div class="row">
@@ -218,7 +222,7 @@
             </div>
         </div>
     </div>
-    <!-- works -->
+    works -->
     <!-- contact -->
     <div id="contact" class="contact">
         <div class="container">
@@ -249,7 +253,7 @@
                             </div>
                             <div class="col-md-6">
 
-                                <input class="contactus" required  pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}"  maxlength="13"  placeholder="예) 010-1234-5678" type="tel" name="member_cellphone">
+                                <input class="contactus" required  pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}"  maxlength="13"  placeholder="전화번호  예) 010-1234-5678" type="tel" name="member_cellphone">
 
                                 <!--
                                 <input id ='phone1' placeholder="010"  type="text" size="1" maxlength="3" name="member_cellphone1> -
@@ -281,22 +285,22 @@
                     </div>
                     <div class="col-md-3 col-sm-6" ">
                   <div class="Informa conta ">
-                     <h3>Contact Us</h3>
+                     <h3>기업 정보</h3>
                      <ul>
-                        <li> <a href="Javascript:void(0) "> <i class="fa fa-map-marker " aria-hidden="true "></i> Location
+                        <li> <a href="Javascript:void(0) "> <i class="fa fa-map-marker " aria-hidden="true "></i> 경기도 광주시
                            </a>
                         </li>
-                        <li> <a href="Javascript:void(0) "><i class="fa fa-phone " aria-hidden="true "></i> Call +01 1234567890
+                        <li> <a href="Javascript:void(0) "><i class="fa fa-phone " aria-hidden="true "></i> 전화 +01 1234567890
                            </a>
                         </li>
-                        <li> <a href="Javascript:void(0) "> <i class="fa fa-envelope " aria-hidden="true "></i> demo@gmail.com
+                        <li> <a href="Javascript:void(0) "> <i class="fa fa-envelope " aria-hidden="true "></i> sbi@gmail.com
                            </a>
                         </li>
                      </ul>
                      <ul>
                         <li>대표이사
                         </li>
-                        <li>     김 석윤 대표
+                        <li>     김석윤 윤병현 공동대표
                         </li>
                         <!--
                         <li>when looking at its                         
@@ -309,26 +313,19 @@
                </div>
                <div class="col-md-3 col-sm-6 "">
                         <div class="Informa helpful">
-                            <h3>Useful Link</h3>
+                            <h3>연계 정보</h3>
                             <ul>
-                                <li>Readable content of
+                                <li>블러그: sbi.naver
                                 </li>
-                                <li>a page when looking
-                                </li>
-                                <li>at its layoutreadable
-                                </li>
-                                <li>content of a page
-                                </li>
-                                <li>when looking at its
-                                </li>
-                                <li>layout
+                                <li>카카오톡: sbinvest
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6" ">
+                </div>
+                <!--
+                <div class="col-md-3 col-sm-6" ">
                   <div class="Informa ">
-                     <h3>Offices</h3>
+                     <h3>기타 사이트</h3>
                      <ul>
                         <li>Readable content of                              
                         </li>
@@ -354,12 +351,13 @@
                      </form>
                   </div>
                </div>
+               -->
             </div>
             <div class="copyright text_align_center ">
                <div class="container ">
                   <div class="row ">
                      <div class="col-md-12 ">
-                        <p>© 2022 All Rights Reserved. SB Investment</p>
+                        <p>© 2023 All Rights Reserved. SB Investment</p>
                      </div>
                   </div>
                </div>
