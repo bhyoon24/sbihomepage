@@ -6,8 +6,14 @@ from .models import member
 # Create your views here.
 
 def index(request):
+    return render(request, "index.html")
+
+def about(request):
+    return render(request, "about.html")
+
+def contact(request):
     if request.method == 'GET':
-        return render(request, 'index.html')
+        return render(request, 'contact.html')
     elif request.method == 'POST':
         member_name = request.POST.get('member_name')
         member_email = request.POST.get('member_email')
@@ -21,7 +27,7 @@ def index(request):
             response['error'] = '회원가입이 정상등록되었습니다.'
             en=member(member_name=member_name, member_email=member_email, member_cellphone=member_cellphone, regdate=regdate)
             en.save()
-        return render(request, 'index.html', response)
+        return render(request, 'contact.html', response)
         #return redirect('sbihome')
         # return HttpResponseRedirect(reverse('sbihome:index'))
     # else:
@@ -36,11 +42,17 @@ def saveEnquery(request):
         print('dddddddd')
         en=member(member_name=member_name, member_email=member_email, member_cellphone=member_cellphone)
         en.save()
-        return render(request, 'index.html')
+        return render(request, 'contact.html')
         #return redirect('sbihome')
         # return HttpResponseRedirect(reverse('sbihome:index'))
     else:
-        return render(request, 'index.html')
+        return render(request, 'contact.html')
+
+# def contact(request):
+#     return render(request, 'contact.html')
+
+
+
 
 # def saveEnquery(request):
 #     if request.method == 'POST':
