@@ -45,14 +45,14 @@
                             var textStock = document.getElementById('stock');
                             console.log(textStock)
                             if(textStock != null){
-                               request.sendmsg.value='[매수] ' + document.getElementById('stock').value;
+                               request.sendmsg.value=document.getElementById('stock').value + ' 현재가 [매수]';
                             }
                         }
                         function sendtxt2(){
                              var textStock = document.getElementById('stock');
 
                              if(textStock != null){
-                                request.sendmsg.value='[매도] ' + document.getElementById('stock').value;
+                                request.sendmsg.value=document.getElementById('stock').value + ' 현재가 [매도]';
                             }
                         }
                     </script>
